@@ -4,6 +4,7 @@
 /* ── VARIÁVEIS ── */
 :root {
   --verde:       #1B4332;
+  --orange:      #e2740c;
   --verde-med:   #2D6A4F;
   --verde-claro: #52B788;
   --dourado:     #C8960C;
@@ -24,7 +25,7 @@ body {
 
 /* ── NAV ── */
 nav {
-  background: var(--verde);
+  background: var(--orange);
   height: 54px;
   display: flex;
   align-items: center;
@@ -33,7 +34,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 2px solid var(--dourado);
+  border-bottom: 2px solid var(--verde);
 }
 
 .nav-menu {
@@ -84,6 +85,7 @@ h1 {
   font-size: clamp(2.5rem, 5vw, 3.8rem);
   line-height: 1.05;
   color: var(--verde);
+  
 }
 
 h1 .dourado { color: var(--dourado); }

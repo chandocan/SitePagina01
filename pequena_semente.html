@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pequena Semente</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('fundo.jpg'); /* coloque aqui sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .imagem {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .titulo {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    text-align: right;
+    color: #006600;
+    font-size: clamp(14px, 3vw, 24px);
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.7);
+    padding: 8px 16px;
+    border-radius: 10px;
+    z-index: 5;
+  }
+
+  .menu button {
+    position: absolute;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #004d00;
+    font-weight: bold;
+    font-size: clamp(11px, 1.6vw, 16px);
+    cursor: pointer;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    white-space: nowrap;
+  }
+
+  .menu button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+  }
+
+  /* Posições baseadas no layout de referência */
+  .btn-passagem-1   { top: 8%;   left: 2%; }
+  .btn-ia-biblica   { top: 9%;   right: 1%; }
+  .btn-busca        { top: 26%;  left: -2%; }
+  .btn-leito        { top: 31%;  right: 0%; }
+  .btn-passagem-2   { top: 41%;  left: 6%; }
+  .btn-play         { top: 49%;  right: 3%; }
+  .btn-shopping     { top: 58%;  left: 3%; }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="flores.png" alt="flores" class="imagem" />
+
+  <div class="titulo">A Pequena Semente</div>
+
+  <div class="menu">
+    <button class="btn-passagem-1">Passagem</button>
+    <button class="btn-ia-biblica">IA_Biblica</button>
+    <button class="btn-busca">Busca</button>
+    <button class="btn-leito">Leito</button>
+    <button class="btn-passagem-2">Passagem</button>
+    <button class="btn-play">Play</button>
+    <button class="btn-shopping">Shopping</button>
+  </div>
+</div>
+
+</body>
+</html>
